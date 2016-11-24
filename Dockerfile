@@ -14,4 +14,4 @@ RUN pip2 install -r /elastalert/requirements.txt
 RUN cd /elastalert && \
   python setup.py install
 
-CMD python /elastalert/elastalert/elastalert.py --config /elastalert/config.yaml
+CMD ["python","/elastalert/elastalert/elastalert.py","--config","/elastalert/config.yaml","--verbose"]
